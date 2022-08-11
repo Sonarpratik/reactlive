@@ -130,6 +130,7 @@ function App() {
           toggleMode={toggleMode}
           // toggle={toggle}
         />
+        <Home />
         <Alert alert={alert} />
         <Routes>
           <Route
