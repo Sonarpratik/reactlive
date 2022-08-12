@@ -16,13 +16,13 @@ export default function Navbar(props) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
         <li className="nav-item active">
-          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link" to="/reactlive/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/about">{props.ab}</Link>
+          <Link className="nav-link" to="/reactlive/about">{props.ab}</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/text">Text</Link>
+          <Link className="nav-link" to="/reactlive/text">Text</Link>
         </li>
        
       </ul>

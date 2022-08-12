@@ -43,7 +43,7 @@ export default function About(props) {
 
   return (
     <>
-      <div className="container" style={props.myStyle}>
+      <div className="container" style={props.myStyle1}>
         <h1 className="my-3">About Us</h1>
         <div id="accordion">
           <div className="card">
@@ -51,11 +51,12 @@ export default function About(props) {
               <h5 className="mb-0"  >
                     
                 <button
-                  className="btn btn-link"
+                  className="btn btn-link collapsed"
                   data-toggle="collapse"
                   data-target="#collapseOne"
                   aria-expanded="true"
                   aria-controls="collapseOne"
+                  style={props.myStyle}
                 >
                   Collapsible Group Item #1
                 </button>
@@ -91,6 +92,8 @@ export default function About(props) {
                   data-target="#collapseTwo"
                   aria-expanded="false"
                   aria-controls="collapseTwo"
+                  style={props.myStyle}
+
                 >
                   Collapsible Group Item #2
                 </button>
@@ -125,6 +128,8 @@ export default function About(props) {
                   data-target="#collapseThree"
                   aria-expanded="false"
                   aria-controls="collapseThree"
+                  style={props.myStyle}
+
                 >
                   Collapsible Group Item #3
                 </button>

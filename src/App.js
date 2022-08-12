@@ -32,6 +32,10 @@ function App() {
     color: "black",
     backgroundColor: "white",
   });
+  const [myStyle1, setmyStyle1] = useState({
+    color: "black",
+    backgroundColor: "white",
+  });
 
   const [cf, setmycf] = useState({
     // color: "black",
@@ -90,11 +94,16 @@ function App() {
       // },200);
       setmyStyle({
         color: "white",
-        backgroundColor: "black",
+        backgroundColor: "rgb(36 74 104)",
+      });
+      setmyStyle1({
+        color: "white",
+        backgroundColor: "#042743",
       });
       setmycf({
         color: "white",
-        backgroundColor: "black",
+        backgroundColor: "rgb(36 74 104)",
+
       });
       setdf("Enable Light mode");
     } else {
@@ -107,6 +116,10 @@ function App() {
       document.title = `TExt App-Light Mode`;
 
       setmyStyle({
+        color: "black",
+        backgroundColor: "white",
+      });
+      setmyStyle1({
         color: "black",
         backgroundColor: "white",
       });
@@ -130,11 +143,10 @@ function App() {
           toggleMode={toggleMode}
           // toggle={toggle}
         />
-        <Home />
-        <Alert alert={alert} />
+          <Alert alert={alert} />
         <Routes>
           <Route
-            path="/about"
+            path="/reactlive/about"
             element={
               <About
                 myStyle={myStyle}
@@ -144,9 +156,9 @@ function App() {
               />
             }
           />
-          <Route path="/" element={<Home />} />
+          <Route path="/reactlive" element={<Home />} />
           <Route
-            path="/text"
+            path="/reactlive/text"
             element={
               <Textfrom
                 show={showAlert}

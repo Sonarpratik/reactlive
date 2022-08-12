@@ -61,7 +61,7 @@ export default function Textfrom(props) {
             id="myBox"
             onChange={hand}
             style={{
-              backgroundColor: props.mode === "dark" ? "black":'white',
+              backgroundColor: props.mode === "dark" ? "rgb(36 74 104)":'white',
               color: props.mode === "dark" ? "white":'black',
             //  if===statisfied?(then)this :(or)that
             }}
@@ -103,9 +103,9 @@ export default function Textfrom(props) {
       <div className="container">
         <h2>Your Text Summary</h2>
         <p>
-          {text.split(" ").length} words and {text.length} character
+          {text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} character
         </p>
-        <p>{0.008 * text.split(" ").length} Minutes to read</p>
+        <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes to read</p>
         <h2>Preview</h2>
         <p>{text.length > 0 ? text : "Enter Something to preview it here"}</p>
       </div>

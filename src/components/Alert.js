@@ -15,9 +15,9 @@ export default function Alert(props) {
   };
 
   return (
-    props.alert && (
-      <>
-        <div className="container">
+    <div style={{height:'60px'}}>
+{    props.alert && (
+      <div className="container">
           <div
             className={`alert alert-${props.alert.type} alert-dismissible fade show`}
             role="alert"
@@ -28,7 +28,7 @@ export default function Alert(props) {
             {/* </button> */}
           </div>
         </div>
-      </>
-    )
+        )}
+        </div>
   );
 }

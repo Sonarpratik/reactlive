@@ -7,9 +7,6 @@
   transition: all 2s linear;
 } */
 
-
-body{
-  /* transition: all 2s linear; */
-
-  /* background-color: red; */
+.btn-link{
+  color: black;
 }
