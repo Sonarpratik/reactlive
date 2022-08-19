@@ -32,10 +32,7 @@ function App() {
     color: "black",
     backgroundColor: "white",
   });
-  const [myStyle1, setmyStyle1] = useState({
-    color: "black",
-    backgroundColor: "white",
-  });
+
 
   const [cf, setmycf] = useState({
     // color: "black",
@@ -96,10 +93,7 @@ function App() {
         color: "white",
         backgroundColor: "rgb(36 74 104)",
       });
-      setmyStyle1({
-        color: "white",
-        backgroundColor: "#042743",
-      });
+    
       setmycf({
         color: "white",
         backgroundColor: "rgb(36 74 104)",
@@ -119,15 +113,13 @@ function App() {
         color: "black",
         backgroundColor: "white",
       });
-      setmyStyle1({
-        color: "black",
-        backgroundColor: "white",
-      });
+     
       setmycf({
         color: "white",
         backgroundColor: "#28a745",
       });
       setdf("Enable Dark mode");
+     
     }
   };
 
@@ -145,6 +137,7 @@ function App() {
         />
           <Alert alert={alert} />
         <Routes>
+          
           <Route
             path="/reactlive/about"
             element={

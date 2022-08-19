@@ -7,20 +7,40 @@ export default function Textfrom(props) {
     let newText = text.toUpperCase();
 
     setText(newText);
-    props.show("Converted to Upper case","primary")
+    if(text===""){
+      props.show("Please Enter The Text","danger")
+
+    }else{
+
+      props.show("Converted to Upper case","primary")
+    }
   };
   const handlelow = () => {
     // console.log("lowercsae was clicked"+text)
     let newText = text.toLowerCase();
 
     setText(newText);
-    props.show("Converted to Lower case","primary")
+    if(text===""){
+      props.show("Please Enter The Text","danger")
+
+    }else{
+
+      props.show("Converted to Lower case","primary")
+    }
+    
 
   };
   const clear = () => {
     setText("");
-    props.show("Clear SuccessFull","danger")
+    if(text===""){
+      props.show("Please Enter The Text","danger")
 
+    }else{
+
+      props.show("Clear SuccessFull","danger")
+
+    }
+    
   };
   const hand = (event) => {
     // console.log("Uppercas")
@@ -34,7 +54,16 @@ export default function Textfrom(props) {
     fix.select();
     fix.setSelectionRange(0, 9999);
     navigator.clipboard.writeText(fix.value);
-    props.show("Copied..!!","warning")
+    if(text===""){
+      props.show("Please Enter The Text","danger")
+
+    }else{
+
+      props.show("Copied..!!","warning")
+
+
+    }
+    
 
   };
 
